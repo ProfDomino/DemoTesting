@@ -103,7 +103,7 @@ export default function Footer(): JSX.Element {
           level="body-md"
           sx={{ marginRight: "0.5rem", color: "text.primary" }}
         >
-          © 2024 LiteracyTech, Inc.
+          © 2024 LiteracyTech, Inc
         </Typography>
       </Box>
     </Box>
