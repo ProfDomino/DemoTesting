@@ -15,7 +15,7 @@ function BrowsePage(): JSX.Element {
   return (
     <Box p={2} mb={12}>
       <Typography level="h1" mb={2}>
-        Browse Your MSBA Books
+        Browse Your MSBA Books - Jov
       </Typography>
     </Box>
   );
