@@ -1,11 +1,10 @@
+import { UserProfile } from 'app/_contexts/user-profile';
+
 export const fetchEndpoint = async (
   fetchToken: ((flag?: boolean) => Promise<string>) | null,
   path: string,
-  method: "GET" | "POST",
-  body: Record<
-    string,
-    string | string[] | boolean | number | Record<string, string>[]
-  >
+  method: "GET" | "POST" | "PUT",
+  body?: UserProfile
 ): Promise<Response> => {
   const accessToken = fetchToken ? await fetchToken() : "";
 
@@ -18,7 +17,7 @@ export const fetchEndpoint = async (
     },
   };
 
-  if (method === "POST") {
+  if (method === "POST" || method === "PUT") {
     options.body = JSON.stringify(body);
   }
 
@@ -37,10 +36,10 @@ export const fetchEndpoint = async (
       `${process.env.NEXT_PUBLIC_HTTPS_ENDPOINT}${path}`,
       {
         cache: "no-store",
-        method: "POST",
+        method,
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`,
+          Authorization: `Bearer ${renewedToken}`,
         },
         body: JSON.stringify(body),
       }

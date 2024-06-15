@@ -25,6 +25,11 @@ import { GiSpellBook, GiTeacher } from "react-icons/gi";
 import { MongoAtlasAppContext } from "@/contexts/mongo-atlas-app";
 import { UserProfileContext } from "@/contexts/user-profile";
 
+// remove these imports for the demo buttons
+import { MdDoNotDisturb } from "react-icons/md";
+import { MdDoNotDisturbAlt } from "react-icons/md";
+
+
 interface NavbarButtonProps {
   link: string;
   text: string;
@@ -118,6 +123,19 @@ function NavbarLoggedInMenu(): JSX.Element | null {
         link={`/${stateAbbreviation}/vote`}
         text="Vote"
       />
+
+      {/* Remove these demo buttons */}
+      <NavbarButton
+        icon={<MdDoNotDisturb />}
+        link={`/${stateAbbreviation}/profile_get_demo`}
+        text="Demo GET Profile"
+      />
+      <NavbarButton
+        icon={<MdDoNotDisturbAlt />}
+        link={`/${stateAbbreviation}/profile_put_demo`}
+        text="Demo PUT Profile"
+      />
+
     </Stack>
   ) : null;
 }

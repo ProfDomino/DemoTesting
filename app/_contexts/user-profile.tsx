@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { MongoAtlasAppContext } from "./mongo-atlas-app";
 import { fetchEndpoint } from "app/_lib/util";
 
-interface UserProfile {
+export interface UserProfile {
   displayName: string;
   firstName: string;
   lastName: string;
@@ -25,6 +25,7 @@ interface UserProfileProviderProps {
   isCommitteeMember: boolean;
   profile: UserProfile;
   setProfile: Dispatch<SetStateAction<UserProfile>>;
+  updateProfile: (updatedProfile: UserProfile) => Promise<void>;
 }
 
 const defaultProfile = (): UserProfile => {
@@ -44,6 +45,7 @@ function initState(): UserProfileProviderProps {
     isCommitteeMember: false,
     profile: defaultProfile(),
     setProfile: () => null,
+    updateProfile: async () => {},
   };
   return vals;
 }
@@ -58,7 +60,6 @@ export default function UserProfileProvider(
   const {
     userLoading,
     isLoggedIn,
-    email,
     accessToken,
     refreshAccessToken,
     currentUser,
@@ -72,8 +73,7 @@ export default function UserProfileProvider(
       const response = await fetchEndpoint(
         refreshAccessToken,
         "/profile",
-        "GET",
-        {}
+        "GET"
       );
 
       if (response.status === 200) {
@@ -99,6 +99,24 @@ export default function UserProfileProvider(
     refreshAccessToken,
   ]);
 
+  const updateProfile = async (updatedProfile: UserProfile) => {
+    const response = await fetchEndpoint(
+      refreshAccessToken,
+      "/profile/update",
+      "PUT",
+      updatedProfile
+    );
+
+    if (response.status === 200) {
+      const json = (await response.json());
+      if (json.success) {
+        console.log({}, json.data);
+      } else {
+        console.error(json.error);
+      }
+    }
+  };
+
   useEffect(() => {
     if (!isLoggedIn) {
       setProfile(defaultProfile());
@@ -114,6 +132,7 @@ export default function UserProfileProvider(
         isCommitteeMember: Boolean(currentUser?.customData.isCommitteeMember),
         profile,
         setProfile,
+        updateProfile,
       }}
     >
       {children}
