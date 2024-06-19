@@ -122,13 +122,6 @@ function NavbarLoggedInMenu(): JSX.Element | null {
         link={`/${stateAbbreviation}/vote`}
         text="Vote"
       />
-
-      {/* Remove these demo buttons */}
-      <NavbarButton
-        icon={<MdDoNotDisturbAlt />}
-        link={`/${stateAbbreviation}/profile_put_demo`}
-        text="Demo PUT Profile"
-      />
     </Stack>
   ) : null;
 }

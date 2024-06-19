@@ -38,14 +38,18 @@ export default function SignupPage(): JSX.Element {
 
   return (
     <Box>
-      <Grid container marginTop={2} spacing={8} alignItems="center">
-        <Typography level="h2" sx={{ mb: 2, color: "#353130" }}>
-          Complete Profile Sign Up
-        </Typography>
-
-        <Grid xs={6} sm={6} md={12} lg={12} style={{ textAlign: "left" }}>
-          <Typography level="h4">
-            Preferred Name:
+      <Box component="section" my={3} pb={2}>
+        <Typography level="h1">Complete Profile Sign Up</Typography>
+        <Grid xs={12} sm={12} md={12} lg={12} style={{ textAlign: "left" }}>
+          <Typography level="body-md">
+            Insert form to view and edit your profile
+          </Typography>
+        </Grid>
+      </Box>
+      <Grid container direction="column" rowSpacing={3} columnSpacing={10}>
+        <Grid xs={12} sm={12} md={12} lg={12} style={{ textAlign: "left" }}>
+          <Typography level="title-md">
+            <strong>Preferred Name: </strong>
             <input
               type="text"
               name="displayName"
@@ -55,9 +59,9 @@ export default function SignupPage(): JSX.Element {
           </Typography>
         </Grid>
 
-        <Grid xs={6} sm={6} md={12} lg={12} style={{ textAlign: "left" }}>
-          <Typography level="h4">
-            Pronouns:
+        <Grid xs={12} sm={12} md={12} lg={12} style={{ textAlign: "left" }}>
+          <Typography level="title-md">
+            <strong>Pronouns: </strong>
             <input
               type="text"
               name="pronouns"
@@ -67,9 +71,9 @@ export default function SignupPage(): JSX.Element {
           </Typography>
         </Grid>
 
-        <Grid xs={6} sm={6} md={12} lg={12} style={{ textAlign: "left" }}>
-          <Typography level="h4">
-            Ethnicity:
+        <Grid xs={12} sm={12} md={12} lg={12} style={{ textAlign: "left" }}>
+          <Typography level="title-md">
+            <strong>Ethnicity: </strong>
             <input
               type="text"
               name="ethnicity"
@@ -95,7 +99,7 @@ export default function SignupPage(): JSX.Element {
               }}
               onClick={handleSaveClick}
             >
-              <Typography level="h4">Save</Typography>
+              Save
             </Button>
           </Grid>
         </Grid>
