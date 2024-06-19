@@ -29,7 +29,6 @@ import { UserProfileContext } from "@/contexts/user-profile";
 import { MdDoNotDisturb } from "react-icons/md";
 import { MdDoNotDisturbAlt } from "react-icons/md";
 
-
 interface NavbarButtonProps {
   link: string;
   text: string;
@@ -126,16 +125,10 @@ function NavbarLoggedInMenu(): JSX.Element | null {
 
       {/* Remove these demo buttons */}
       <NavbarButton
-        icon={<MdDoNotDisturb />}
-        link={`/${stateAbbreviation}/profile_get_demo`}
-        text="Demo GET Profile"
-      />
-      <NavbarButton
         icon={<MdDoNotDisturbAlt />}
         link={`/${stateAbbreviation}/profile_put_demo`}
         text="Demo PUT Profile"
       />
-
     </Stack>
   ) : null;
 }

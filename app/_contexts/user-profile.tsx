@@ -12,6 +12,14 @@ export interface UserProfile {
   email: string;
   ethnicity: string;
   pronouns: string;
+  committee: string;
+  role: string;
+  title: string;
+  schoolLibrary: string;
+  buddyName: string;
+  termStartDate: string;
+  termEndDate: string;
+  picture: string;
 }
 
 interface UserProfileResponse {
@@ -36,6 +44,14 @@ const defaultProfile = (): UserProfile => {
     email: "",
     ethnicity: "",
     pronouns: "",
+    committee: "",
+    role: "",
+    title: "",
+    schoolLibrary: "",
+    buddyName: "",
+    termStartDate: "",
+    termEndDate: "",
+    picture: "",
   };
 };
 
@@ -108,7 +124,7 @@ export default function UserProfileProvider(
     );
 
     if (response.status === 200) {
-      const json = (await response.json());
+      const json = await response.json();
       if (json.success) {
         console.log({}, json.data);
       } else {
