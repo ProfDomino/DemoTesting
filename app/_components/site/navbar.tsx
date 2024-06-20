@@ -25,6 +25,10 @@ import { GiSpellBook, GiTeacher } from "react-icons/gi";
 import { MongoAtlasAppContext } from "@/contexts/mongo-atlas-app";
 import { UserProfileContext } from "@/contexts/user-profile";
 
+// remove these imports for the demo buttons
+import { MdDoNotDisturb } from "react-icons/md";
+import { MdDoNotDisturbAlt } from "react-icons/md";
+
 interface NavbarButtonProps {
   link: string;
   text: string;
