@@ -35,7 +35,9 @@ export default function MSBAHomePage(): JSX.Element {
       <Box marginTop={2}>
         <Button
           component={NextLink}
-          href={`/${stateAbbreviation}/${isLoggedIn ? "browse" : "login"}`}
+          // regardless of what our state is, bring me to the signin page
+          // after clicking "get started"
+          href={`/${stateAbbreviation}/${isLoggedIn ? "signin" : "signin"}`}
           size="lg"
           sx={{
             mt: 5,
