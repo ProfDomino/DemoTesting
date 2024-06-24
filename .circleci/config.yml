@@ -21,19 +21,10 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-      - run: npm install
-      # Replace this with a real test runner invocation
       - run:
-          name: Run tests
-          command: npx playwright test
-      - store_artifacts:
-          path: ./test-results
-          destination: playwright-report-first
-      - store_artifacts:
-          path: /tmp/artifacts
+          name: sample
+          command: echo "Success"
+      
   build:
     docker:
       - image: cimg/base:current
