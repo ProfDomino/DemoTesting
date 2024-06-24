@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2939c72-9ea3-4b0f-b4d0-f6dd829714a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/about/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/book/[bookId]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/browse/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/faq/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/login/auth/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/login/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/logout/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../app/[stateAbbreviation]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/privacy/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/profile/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/redirect/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/reflect/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/signup/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/[stateAbbreviation]/terms-conditions/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2iIliqVjHeVVHpaVb61Ifi7I61v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Playwright.Get Started Button Click Test.executor": "Run",
+    "Playwright.Main Page Test.executor": "Run",
+    "Playwright.SignIn button swaps text.executor": "Run",
+    "Playwright.example.spec.ts.executor": "Run",
+    "Playwright.has title.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/Aqua.app/Contents/plugins/javascript-base/jsLanguageServicesImpl/external"
+  }
+}]]></component>
+  <component name="RunManager" selected="Playwright.Main Page Test (1)">
+    <configuration name="Get Started Button Click Test" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/example.spec.ts" />
+      <test-names>
+        <test-name value="Get Started Button Click Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Main Page Test (1)" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/demo_integration.spec.ts" />
+      <test-names>
+        <test-name value="Main Page Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Main Page Test" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/example.spec.ts" />
+      <test-names>
+        <test-name value="Main Page Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="SignIn button swaps text" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/example.spec.ts" />
+      <test-names>
+        <test-name value="SignIn button swaps text" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="example.spec.ts" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/tests/example.spec.ts" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Playwright.Main Page Test (1)" />
+        <item itemvalue="Playwright.SignIn button swaps text" />
+        <item itemvalue="Playwright.Get Started Button Click Test" />
+        <item itemvalue="Playwright.Main Page Test" />
+        <item itemvalue="Playwright.example.spec.ts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastUrl" value="http://localhost:3000/me/signin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2939c72-9ea3-4b0f-b4d0-f6dd829714a9" name="Changes" comment="" />
+      <created>1719186108879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719186108879</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
