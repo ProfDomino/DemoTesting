@@ -23,6 +23,7 @@
       "@/contexts/*": ["app/_contexts/*"],
       "@/types/*": ["app/_types/*"],
       "@/data/*": ["app/_data/*"],
+      "@/stateAbbreviation/*": ["app/[stateAbbreviation]"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
